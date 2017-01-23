@@ -1,0 +1,16 @@
+1;Enero 23 - Enero 37;Bienvenida - Introducción;-;-
+2;Enero 30 - Febrero 3;-;-;-
+3;Febrero 6 - Febrero 10;-;-;-
+4;Febrero 13 - Febrero 17;-;-;-
+5;Febrero 20 - Febrero 24;-;-;-
+6;Febrero 27 - Marzo 3;-;-;-
+7;Marzo 6 - Marzo 10;-;-;-
+8;Marzo 13 - Marzo 17;-;-;-
+9;Marzo 20 - Marzo 24;-;-;-
+10;Marzo 27 - Marzo 31;-;-;-
+11;Enero 30 - Febrero 3;-;-;-
+12;Enero 30 - Febrero 3;-;-;-
+13;Enero 30 - Febrero 3;-;-;-
+14;Enero 30 - Febrero 3;-;-;-
+15;Enero 30 - Febrero 3;-;-;-
+16;Enero 30 - Febrero 3;-;-;-

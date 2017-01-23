@@ -1,0 +1,7 @@
+.justificado {
+	text-align: justify;
+    text-justify: inter-word;
+}
+th, .center {
+	 text-align:center;
+}
