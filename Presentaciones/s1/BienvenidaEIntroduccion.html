@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>MEL 2017-10</title>
+
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Bienvenida e Introducción</h3>
+					<br>
+					<h4>ISIS 1104: Matemática Estructural y Lógica</h4>
+					<br>
+					<h5>Universidad de los Andes</h5>
+				</section>
+				<section>
+					<h2> Camilo Escobar Velásquez</h2>
+					<br>
+					<h6>Ingeniero de Sistemas y Computación</h6>
+					<h6>Opción Academica en Matemáticas</h6>
+					<h6>ca.escobar2434@uniandes.edu.co</h6>
+					<h6>Horario Atención: Correo</h6>
+					<h6>Oficina: ML-102<h6>
+				</section>
+				<section>
+					<h3>Horario</h3>
+					<h5>Clase: I-3:30pm->5pm -- J-3:30pm->5pm</h5>
+				</section>
+				<section>
+					<h5>Asistencia? Obligatoria.</h5>
+					<h5>Puedo asistir a la otra sección? si</h5>
+				</section>
+				<section>
+					<h1>Presentación Estudiantes!</h1>
+				</section>
+				<section>
+					<h1><a href="http://www.maths.manchester.ac.uk/~kd/latextut/artex.pdf">$$\LaTeX$$</a></h1>
+					<p>Sistema procesador de textos y un lenguaje de etiquetas que permite generar documentos de
+						texto organizados y bien presentados. Recibe aportes de todo el mundo en forma de paquetes y es abierto a
+						diversos sistemas operativos, por lo tanto tiene una amplia 
+						exibilidad.</p>
+				</section>
+				<section>
+					<h3>Instalación</h3>
+					<p>Se necesita una distribución Tex para ser instalado.</p>
+					<p>Windows:<a href="http://www.miktex.org/">MiKTeX</a></p>
+					<p>Mac:<a href="http://www.tug.org/mactex/">MacTex</a> o <a href="http://www.tug.org/texlive/">TexLive</a></p>
+				</section>
+				<section>
+					<h3>Compiladores Online:</h3>
+					<ul>
+						<li><a href="http://www.scribtex.sharelatex.com">ScribTex</a></li>
+						<li><a href="http://www.sharelatex.com">ShareLatex</a></li>
+						<li><a href="http://www.overleaf.com">Overleaf</a></li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h4>Sintaxis básica de $$\LaTeX$$</h4>
+					</section>
+					<section>
+						<p>$$\LaTeX$$ usa un lenguaje de etiquetas para describir la estructura de un documento y su presentación.</p>
+					</section>
+					<section>
+						<p>Las etiquetas pueden tener 2 formatos:</p>
+						<ul>
+							<li>Comienza con \ después un nombre en letras: <em style="color:red">\emph</em>&#123;<em  style="color:blue">Texto</em>&#125;</li>
+							<li>Comienza con \ después un sólo carácter no alfabético: \$
+						</ul>
+					</section>
+					<section>
+						<h3>Ambientes</h3>
+						<p>Adicionalmente, se tienen 'ambientes' los cuales permiten generar comportamientos específicos sobre el
+						texto.</p>	
+						<img src="./imgs/img1.PNG">
+					</section>
+					<section>
+						<h2>itemize</h2>
+						<img src="./imgs/img2.PNG">
+						<p>Al compilar:</p>
+						<img src="./imgs/img3.PNG">
+					</section>
+					<section>
+						<h2>equation</h2>
+						<img src="./imgs/img4.PNG">
+						<p>$$\Rightarrow x=y+1$$</p>
+					</section>
+					<section>
+						<h2>Documento Simple</h2>
+						<a href="./pdfs/prueba.pdf"><img src="./imgs/img5.PNG"></a>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Comandos</h1>
+					</section>
+					<section>
+						<table>
+						<thead>
+							<tr>
+								<th>Comando</th>
+								<th>Resultado</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>\vee</td>
+								<td>$$\vee$$</td>
+							</tr>
+							<tr>
+								<td>\wedge</td>
+								<td>$$\wedge$$</td>
+							</tr>
+							<tr>
+								<td>\neg</td>
+								<td>$$\neg$$</td>
+							</tr>
+							<tr>
+								<td>\langle</td>
+								<td>$$\langle$$</td>
+							</tr>
+							<tr>
+								<td>\rangle</td>
+								<td>$$\rangle$$</td>
+							</tr>
+						</tbody>
+					</table>
+					</section>
+					<section>
+						<table>
+						<thead>
+							<tr>
+								<th>Comando</th>
+								<th>Resultado</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>\equiv</td>
+								<td>$$\equiv$$</td>
+							</tr>
+							<tr>
+								<td>x^n</td>
+								<td>$$x^n$$</td>
+							</tr>
+							<tr>
+								<td>x^{n+1}</td>
+								<td>$$x^{n+1}$$</td>
+							</tr>
+							<tr>
+								<td>x_n</td>
+								<td>$$x_n$$</td>
+							</tr>
+							<tr>
+								<td>x_{n+1}</td>
+								<td>$$x_{n+1}$$</td>
+							</tr>
+						</tbody>
+					</table>
+					</section>
+					<section>
+						<table>
+						<thead>
+							<tr>
+								<th>Comando</th>
+								<th>Resultado</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>\rightarrow</td>
+								<td>$$\rightarrow$$</td>
+							</tr>
+							<tr>
+								<td>\leftarrow</td>
+								<td>$$\leftarrow$$</td>
+							</tr>
+							<tr>
+								<td>\leftrightarrow</td>
+								<td>$$\leftrightarrow$$</td>
+							</tr>
+						</tbody>
+					</table>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../plugin/markdown/marked.js' },
+					{ src: '../plugin/math/math.js', async: true },
+					{ src: '../plugin/markdown/markdown.js' },
+					{ src: '../plugin/notes/notes.js', async: true },
+					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
