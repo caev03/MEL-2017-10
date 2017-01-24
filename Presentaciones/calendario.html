@@ -36,7 +36,6 @@
           <ul class="nav nav-pills pull-right">
             <li role="presentation" ><a href="index.html">Home</a></li>
             <li role="presentation" class="active"><a href="calendario.html">Calendario</a></li>
-            <li role="presentation"><a href="#">Diapositivas</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">Matemática Estructural y Lógica</h3>
@@ -85,10 +84,13 @@
 		function processData(allText) {
 		    var allTextLines = allText.split(/\r\n|\n/);
 
-		    for (var i=1; i<allTextLines.length; i++) {
+		    for (var i=0; i<allTextLines.length; i++) {
 		    	console.log(allTextLines[i]);
 		    	var data = allTextLines[i].split(';');
 		    	var tr = document.createElement("tr");
+		    	if(data[5]!="-"){
+		    		tr.className+=data[5];
+		    	}
 		    	var id = document.createElement("td");
 		    	id.className += "center";
 		    	id.appendChild(document.createTextNode(data[0]))
@@ -101,13 +103,23 @@
 		    	var slides = document.createElement("td");
 		    	slides.className += "center";
 		    	var slideLink = document.createElement("a")
-		    	slideLink.setAttribute("href", "\""+data[3]+"\"");
+		    	if(data[3]=="-"){
+		    		slideLink.setAttribute("href", "#");
+		    	}
+		    	else {
+		    		slideLink.setAttribute("href", data[3]);
+		    	}
 		    	slideLink.appendChild(document.createTextNode("Link"))
 		    	slides.appendChild(slideLink);
 		    	var homework = document.createElement("td");
 		    	homework.className += "center";
 		    	var homeworkLink = document.createElement("a")
-		    	homeworkLink.setAttribute("href", "\""+data[4]+"\"");
+		    	if(data[3]=="-"){
+		    		homeworkLink.setAttribute("href", "#");
+		    	}
+		    	else {
+		    		homeworkLink.setAttribute("href", data[4]);
+		    	}
 		    	homeworkLink.appendChild(document.createTextNode("Link"))
 		    	homework.appendChild(homeworkLink);
 		    	tr.appendChild(id);
@@ -115,7 +127,7 @@
 		    	tr.appendChild(title);
 		    	tr.appendChild(slides);
 		    	tr.appendChild(homework);
-		    	$("#tableBody").appendChild(tr);
+		    	$("#tableBody").append(tr);
 		    }
 		    // alert(lines);
 		}
