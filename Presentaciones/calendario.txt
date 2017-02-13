@@ -1,6 +1,6 @@
 ﻿1;Enero 23 - Enero 27;Bienvenida - Introducción;./s1/BienvenidaEIntroduccion.html#/;./s1/pdfs/Tarea1.pdf;table-success
 2;Enero 30 - Febrero 3;Sistemas Formales, Sistemas Lógicos y Logica proposicional;./s2/class2.html;./s2/pdfs/Tarea2MEL.pdf;-
-3;Febrero 6 - Febrero 10;Traducción a & de lenguaje natural. Representación y Deducción;./s3/class3.html;-;-
+3;Febrero 6 - Febrero 10;Traducción a & de lenguaje natural. Representación y Deducción;./s3/class3.html;./s3/pdfs/Tarea_3.pdf;-
 4;Febrero 13 - Febrero 17;-;-;-;-
 5;Febrero 20 - Febrero 24;-;-;-;-
 6;Febrero 27 - Marzo 3;-;-;-;-
