@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>MEL 2017-10</title>
+
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>Titulo</h3>
+					<br>
+					<h4>ISIS 1104: Matemática Estructural y Lógica</h4>
+					<br>
+					<h5>Universidad de los Andes</h5>
+				</section>
+				<section>
+					<h3>Cuantificadores</h3>
+				</section>
+				<section>
+					<p>Una operación binaria $$\oplus$$ es ACU si: Asociativa, Conmutativa y Unitaria</p>
+					<ol>
+						<li>Suma</li>
+						<li>Multiplicación</li>
+						<li>& lógico</li>
+						<li>| lógico</li>
+					</ol>
+				</section>
+				<section>
+					<h2>$$(\oplus x | Q : E)$$</h2>
+					<p>x: Variable de cuantificación</p>
+					<p>Q: rango de la cuantificación, condición sobre x</p>
+					<p>E: cuerpo de la cuantificación</p>
+				</section>
+				<section>
+					<h3>Ejercicios</h3>
+					<ol>
+						<li> a max b (a,b Enteros no Negativos)</li>
+						<li> a min b (a,b reales no negativos)</li>
+						<li> a & b (a concatenado b)</li>
+						<li>$$a \equiv b$$</li>
+					</ol>
+				</section>
+				<section>
+					<h3>Axioma Rango Vacio</h3>
+					<p>$$(\oplus x | false : P ) = u$$</p>
+				</section>
+				<section>
+					<h3>Ejemplos</h3>
+					<p>$$(+x:int | 1\lt x \lt 0 : 5*x) = 0$$</p>
+					<p>$$(*x:int | 1\lt x \lt 0 : 5*x) = 1$$</p>
+				</section>
+				<section>
+					<h3>Cuantificadores universales</h3>
+					<p>propiedad.x = x tiene cierta propiedad</p>
+				</section>
+				<section>
+					<h3>Ejemplos</h3>
+					<p>perro.x = x es un perro</p>
+					<p>gato.x = y es un gato</p>
+				</section>
+				<section>
+					<h3>Axioma de un punto</h3>
+					<p>$$(+x:int | 0 \lt x \lt 2: 5*x)$$</p>
+					<p>$$\equiv (+x:int | x=1: 5*x)$$</p>
+					<p>$$\equiv 5*x[x:=1]$$</p>
+				</section>
+				<section>
+					<h3>Axioma: Distributividad</h3>
+					<p>$$(\oplus x|R:E1) \oplus (\oplus x|R:E2) = (\oplus x|R:E1\oplus E2)$$</p>
+					<p>$$(+k| 0 \lt k \lt n : k+1)$$</p>
+					<p>$$=(+k| 0 \lt k \lt n : k)+(+k| 0 \lt k \lt n : 1)$$</p>
+				</section>
+				<section>
+					<h3>Axioma: Partir rango disyunto</h3>
+					<p>$$(\oplus x|R\vee S:E)=(\oplus x|R:E)\oplus (\oplus x|S:E)$$</p>
+					<img src="imgs/img5.PNG">
+				</section>
+				<section>
+					<h3>Axioma Partir rango general</h3>
+					<p>$$(\oplus x|R \wedge S: E)\oplus (\oplus x|R \vee S: E)$$</p>
+					<p>$$= (\oplus x|R: E) \oplus (\oplus x|S: E)$$</p>
+					<img src="imgs/img6.PNG">
+				</section>
+				<section>
+					<h3>Axioma: Partir rango por idempotencia</h3>
+					<p>$$Si \oplus es\ \ idempotente\ \ x\oplus x = x$$</p>
+					<p>$$(\oplus x | R \vee S:E)=(\oplus x|R:E)\oplus (\oplus x|S:E)$$</p>
+					<img src="imgs/img7.PNG">
+				</section>
+				<section>
+					<h3>Axioma Intercambio de variables de cuantificación</h3>
+					<p>$$(\oplus x|R:(\oplus y|Q:E))=(\oplus y|Q:(\oplus x|R:E))$$<p>
+					<img src="imgs/img8.PNG">
+				</section>
+				<section>
+					<h3>Axioma: Anidamiento</h3>
+					<p>$$(+i,j|1\le i \le m \wedge 1\le j \le n: b[i,j])$$</p>
+					<p>$$(+i|1\le i \le m:(+y|1\le j \le n:b[i,j]))$$</p>
+				</section>
+				<section>
+					<h3>Rompimiento por término externo</h3>
+					<img src="imgs/img9.PNG">
+				</section>
+				<section>
+					<h3>Ejercicios Traducción a lógica de predicados</h3>
+				</section>
+				<section>
+					<ol>
+						<li>Todos los Actores son famosos</li>
+						<li>Algunos padres son responsables</li>
+						<li>Las manzanas y las fresas son nutritivas</li>
+						<li>Ningún coche que tenga más de 10 años será reparado si está realmente averiado.</li>
+						<li>En toda pareja de vecinos hay algún envidioso</li>
+						<li>Sólo los amigos de Juan son divertidos</li>
+					</ol>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../plugin/zoom-js/zoom.js', async: true },
+					{ src: '../plugin/notes/notes.js', async: true },
+					{ src: '../plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
