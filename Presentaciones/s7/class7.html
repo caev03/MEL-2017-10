@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>MEL 2017-10</title>
+
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>Conceptos Fundamentales de Conjuntos</h3>
+					<br>
+					<h4>ISIS 1104: Matemática Estructural y Lógica</h4>
+					<br>
+					<h5>Universidad de los Andes</h5>
+				</section>
+				<section>
+					<h3>Conjunto</h3>
+					<p>Agregado de conjuntos que cumplen cierta propiedad</p>
+				</section>
+				<section>
+					<h3>Representación conjuntos</h3>
+					<p>Extensional: {a,e,i,o,u}</p>
+					<p>Intensional: { variable : dominio | predicado }</p>
+					<p>{ n : <strong>nat</strong> | n>5 }</p>
+				</section>
+				<section>
+					<h3>Operaciones sobre Conjuntos</h3>
+					<img src="./imgs/img1.PNG"/>
+				</section>
+				<section>
+					<img src="./imgs/img2.PNG"/>
+				</section>
+				<section>
+					<h3>Axiomas de Conjuntos</h3>
+				</section>
+				<section>
+					<h3>Axioma: Pertenencia</h3>
+					<p>$$y \in \lbrace x:U|p.x \rbrace \equiv p.y$$</p>
+					<h3>Axioma: Igualdad</h3>
+					<p>$$A=B \equiv  ( \forall x:U|: x\in A \equiv x\in B )$$</p>
+				</section>
+				<section>
+					<h3>Propiedades de las Operaciones</h3>
+				</section>
+				<section>
+					<h3>De Morgan</h3>
+					<p>$$(A\cup B)^c = A^c \cap B^c$$</p>
+					<h3>MetaTeorema de la Representación</h3>
+					<img src="./imgs/img3.PNG">
+				</section>
+				<section>
+					<h3>Union e Intersección Generalizadas</h3>
+					<img src="./imgs/img4.PNG"/>
+				</section>
+				<section>
+					<img src="./imgs/img5.PNG"/>
+				</section>
+			</div>
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../plugin/zoom-js/zoom.js', async: true },
+					{ src: '../plugin/notes/notes.js', async: true },
+					{ src: '../plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

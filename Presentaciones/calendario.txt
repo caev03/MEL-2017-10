@@ -2,9 +2,9 @@
 2;Enero 30 - Febrero 3;Sistemas Formales, Sistemas Lógicos y Logica proposicional;./s2/class2.html;./s2/pdfs/Tarea2MEL.pdf;-
 3;Febrero 6 - Febrero 10;Traducción a & de lenguaje natural. Representación y Deducción;./s3/class3.html;./s3/pdfs/Tarea_3.pdf;-
 4;Febrero 13 - Febrero 17;Tipos de Pruebas y Cuantificadores;./s4/class4.html;-;-
-5;Febrero 20 - Febrero 24;-;-;-;-
+5;Febrero 20 - Febrero 24;Cuantificadores;./s5/class5.html;-;-
 6;Febrero 27 - Marzo 3;-;-;-;-
-7;Marzo 6 - Marzo 10;-;-;-;-
+7;Marzo 6 - Marzo 10;Conjuntos;./s7/class7.html;-;-
 8;Marzo 13 - Marzo 17;-;-;-;-
 9;Marzo 20 - Marzo 24;-;-;-;-
 10;Marzo 27 - Marzo 31;-;-;-;-
