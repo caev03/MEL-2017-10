@@ -5,7 +5,7 @@
 5;Febrero 20 - Febrero 24;Cuantificadores;./s5/class5.html;-;-
 6;Febrero 27 - Marzo 3;-;-;-;-
 7;Marzo 6 - Marzo 10;Conjuntos;./s7/class7.html;-;-
-8;Marzo 13 - Marzo 17;-;-;-;-
+8;Marzo 13 - Marzo 17;Ejercicios Teoria Conjuntos;./s7/Clase_8.pdf;-;-
 9;Marzo 20 - Marzo 24;-;-;-;-
 10;Marzo 27 - Marzo 31;-;-;-;-
 11;Abril 3 - Abril 7;-;-;-;-
